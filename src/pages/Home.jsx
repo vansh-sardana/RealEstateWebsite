@@ -10,9 +10,9 @@ const Home = () => {
   async function fetchData() {
     setLoading(true);
     try {
-      const res = await fetch(API_URL);
-      const data = await res.json();
-      // const data= products;
+      // const res = await fetch(API_URL);
+      // const data = await res.json();
+      const data= products;
       setPosts(data);
     }
     catch (e) {
