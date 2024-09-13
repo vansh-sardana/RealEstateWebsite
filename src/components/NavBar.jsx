@@ -13,14 +13,14 @@ const NavBar = () => {
         </NavLink>
         <div className='flex justify-between font-medium gap-x-6 mr-5 '>
           <NavLink to={"/"} className="hover:text-green-400">Home</NavLink>
-          <NavLink to={"/cart"} className="relative hover:text-green-400">
+          {/* <NavLink to={"/cart"} className="relative hover:text-green-400">
             <FaCartShopping className='text-2xl'/>
             {
               items.length>0 &&
               <div className='absolute -top-1 -right-2 text-xs w-5 h-5 bg-green-600 rounded-full flex justify-center items-center animate-bounce'>{items.length}</div>
 
             }
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
     </div>

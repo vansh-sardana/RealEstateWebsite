@@ -23,12 +23,12 @@ const Card = ({post}) => {
             <p className='w-40 text-normal text-gray-400 text-[10px]'>{post.description.split(" ").slice(0,10).join(" ")+" ..."}</p>
             <img src={post.imageUrls} className='h-[250px]'/>
             <div className='flex flex-row justify-between gap-11 mt-5 w-full items-center'>
-                <p className='text-green-600 font-semibold'>${post.regularPrice}</p>
+                <p className='text-green-600 font-semibold'>${post.regularPrice} Millions</p>
                 {
                 cart.some((p)=> p.id===post.id )? 
                 <button onClick={removeHandler} className='text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[12px] uppercase py-1 px-3 group-hover:bg-gray-700 group-hover:text-white transition-all duration-300 ease-in-out'>Remove Item</button>
                 : 
-                <button onClick={addHandler} className='text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[12px] uppercase py-1 px-3 group-hover:bg-gray-700 group-hover:text-white transition-all duration-300 ease-in-out'>Add to Cart</button>}
+                <button onClick={addHandler} className='text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[12px] uppercase py-1 px-3 group-hover:bg-gray-700 group-hover:text-white transition-all duration-300 ease-in-out'>Save for Later</button>}
                 
             </div>
 
